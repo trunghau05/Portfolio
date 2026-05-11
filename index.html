@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Hau Nguyen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollToPlugin.min.js"></script>
+</head>
+<body>
+    <div class="bg-grid"></div>
+    <div class="gradient gradient-a"></div>
+    <div class="gradient gradient-b"></div>
+
+    <header class="topbar">
+        <a href="#page1" class="brand">HAU NGUYEN</a>
+        <button class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+        <nav class="topbar-nav">
+            <button class="menu-close" aria-label="Close menu"><i class="fas fa-times"></i></button>
+            <a href="#page1">Info</a>
+            <a href="#page2">Languages</a>
+            <a href="#page3">Tools</a>
+            <a href="#page4">Storage</a>
+            <a href="#page5">Projects</a>
+            <a href="#page6">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="page1" class="page hero page-dark">
+            <div class="hero-content reveal">
+                <p class="eyebrow">FULL STACK DEVELOPER</p>
+                <h1>Hau Nguyen</h1>
+                <p class="summary">
+                    I build practical web products with clean architecture and modern UX. My focus is turning business ideas into reliable applications that are fast, maintainable, and easy to scale.
+                </p>
+                <a href="#page5" class="cta">View Projects</a>
+            </div>
+            <div class="avatar-wrap reveal">
+                <img src="assets/avatar.jpg" alt="Profile avatar" class="avatar">
+            </div>
+        </section>
+
+        <section id="page2" class="page">
+            <div class="section-head reveal">
+                <h2>Languages & Framework</h2>
+            </div>
+            <div class="media-card skills-card reveal">
+                <div class="skills-vertical" aria-label="Main languages">
+                    <article class="skill-row" data-tech="JavaScript">
+                        <div class="skill-meta">
+                            <img src="https://cdn.simpleicons.org/javascript/f7df1e" alt="JavaScript icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Application logic and frontend architecture</p>
+                                <div class="skill-progress" style="--level: 92%;">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="skill-row" data-tech="TypeScript">
+                        <div class="skill-meta">
+                            <img src="https://cdn.simpleicons.org/typescript/3178c6" alt="TypeScript icon">
+                            <div>
+                                <h3>TypeScript</h3>
+                                <p>Typed APIs and scalable codebases</p>
+                                <div class="skill-progress" style="--level: 88%;">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="skill-row" data-tech="React">
+                        <div class="skill-meta">
+                            <img src="https://cdn.simpleicons.org/react/61dafb" alt="React icon">
+                            <div>
+                                <h3>React</h3>
+                                <p>Component systems and UX performance</p>
+                                <div class="skill-progress" style="--level: 90%;">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="skill-row" data-tech="Angular">
+                        <div class="skill-meta">
+                            <img src="https://cdn.simpleicons.org/angular/dd0031" alt="Angular icon">
+                            <div>
+                                <h3>Angular</h3>
+                                <p>Enterprise dashboard and form workflows</p>
+                                <div class="skill-progress" style="--level: 84%;">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="skill-row" data-tech="Ionic">
+                        <div class="skill-meta">
+                            <img src="https://cdn.simpleicons.org/ionic/3880ff" alt="Ionic icon">
+                            <div>
+                                <h3>Ionic</h3>
+                                <p>Hybrid mobile app delivery</p>
+                                <div class="skill-progress" style="--level: 82%;">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="skill-row" data-tech="Python">
+                        <div class="skill-meta">
+                            <img src="https://cdn.simpleicons.org/python/3776ab" alt="Python icon">
+                            <div>
+                                <h3>Python</h3>
+                                <p>Automation, backend services, and scripting</p>
+                                <div class="skill-progress" style="--level: 86%;">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="skill-row" data-tech="Django">
+                        <div class="skill-meta">
+                            <img src="https://cdn.simpleicons.org/django/092e20" alt="Django icon">
+                            <div>
+                                <h3>Django</h3>
+                                <p>REST APIs and admin-driven products</p>
+                                <div class="skill-progress" style="--level: 80%;">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="page3" class="page">
+            <div class="section-head reveal">
+                <h2>Tools & Control</h2>
+            </div>
+            <div class="tool-grid">
+                <article class="tool-card reveal" data-tech="Material UI"><img src="https://cdn.simpleicons.org/mui/007fff" alt="Material UI"><h3>Material UI</h3></article>
+                <article class="tool-card reveal" data-tech="Notion"><img src="https://cdn.simpleicons.org/notion/ffffff" alt="Notion"><h3>Notion</h3></article>
+                <article class="tool-card reveal" data-tech="Fork"><img src="https://fork.dev/images/logo.png" alt="Fork"><h3>Fork</h3></article>
+                <article class="tool-card reveal" data-tech="Git"><img src="https://cdn.simpleicons.org/git/f05032" alt="Git"><h3>Git</h3></article>
+                <article class="tool-card reveal" data-tech="GitHub"><img src="https://cdn.simpleicons.org/github/f5f5f5" alt="GitHub"><h3>GitHub</h3></article>
+                <article class="tool-card reveal" data-tech="Figma"><img src="https://cdn.jim-nielsen.com/macos/128/figma-2021-05-05.png?rf=1024" alt="Figma"><h3>Figma</h3></article>
+                <article class="tool-card reveal" data-tech="Postman"><img src="https://cdn.simpleicons.org/postman/ff6c37" alt="Postman"><h3>Postman</h3></article>
+            </div>
+        </section>
+
+        <section id="page4" class="page">
+            <div class="section-head reveal">
+                <h2>Storages & Database</h2>
+            </div>
+            <div class="db-grid">
+                <article class="db-card reveal" data-tech="MySQL"><img src="https://cdn.simpleicons.org/mysql/4479a1" alt="MySQL"><h3>MySQL</h3></article>
+                <article class="db-card reveal" data-tech="MongoDB"><img src="https://cdn.simpleicons.org/mongodb/47a248" alt="MongoDB"><h3>MongoDB</h3></article>
+                <article class="db-card reveal" data-tech="Cloudinary"><img src="https://cdn.simpleicons.org/cloudinary/3448c5" alt="Cloudinary"><h3>Cloudinary</h3></article>
+                <article class="db-card reveal" data-tech="Supabase"><img src="https://cdn.simpleicons.org/supabase/3ecf8e" alt="Supabase"><h3>Supabase</h3></article>
+            </div>
+        </section>
+
+        <section id="page5" class="page">
+            <div class="section-head reveal">
+                <h2>Projects</h2>
+            </div>
+
+            <article class="project-card reveal">
+                <div class="project-head">
+                    <div class="project-logo"><img src="assets/ponplan/logo.jpg" alt="PonPlan logo" style="width:100%;height:100%;object-fit:cover;border-radius:14px;"></div>
+                    <div>
+                        <h3>PonPlan</h3>
+                        <p>Expense management app with personal spending tracking and consumption charts.</p>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/trunghau05/ProjectPonPlan" target="_blank" rel="noreferrer">GitHub</a>
+                        <a href="https://ponplan-demo.example.com" target="_blank" rel="noreferrer">Demo</a>
+                    </div>
+                </div>
+                <div class="project-gallery">
+                    <button class="gallery-nav gallery-prev" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+                    <img src="assets/ponplan/img1.png" alt="PonPlan screenshot 1">
+                    <img src="assets/ponplan/img2.png" alt="PonPlan screenshot 2">
+                    <img src="assets/ponplan/img3.png" alt="PonPlan screenshot 3">
+                    <img src="assets/ponplan/img4.png" alt="PonPlan screenshot 4">
+                    <button class="gallery-nav gallery-next" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </article>
+
+            <article class="project-card reveal">
+                <div class="project-head">
+                    <div class="project-logo"><img src="assets/vitdaily/logo.jpg" alt="VitDaily logo" style="width:100%;height:100%;object-fit:cover;border-radius:14px;"></div>
+                    <div>
+                        <h3>VitDaily</h3>
+                        <p>Personal and team workspace task management app.</p>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/trunghau05/ProjectVitDaily" target="_blank" rel="noreferrer">GitHub</a>
+                        <a href="https://vitdaily-demo.example.com" target="_blank" rel="noreferrer">Demo</a>
+                    </div>
+                </div>
+                <div class="project-gallery">
+                    <button class="gallery-nav gallery-prev" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+                    <img src="assets/vitdaily/img1.png" alt="VitDaily screenshot 1">
+                    <img src="assets/vitdaily/img2.png" alt="VitDaily screenshot 2">
+                    <img src="assets/vitdaily/img3.png" alt="VitDaily screenshot 3">
+                    <img src="assets/vitdaily/img4.png" alt="VitDaily screenshot 4">
+                    <button class="gallery-nav gallery-next" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </article>
+
+            <article class="project-card reveal">
+                <div class="project-head">
+                    <div class="project-logo"><img src="assets/eranux/logo.jpg" alt="Eranux logo" style="width:100%;height:100%;object-fit:cover;border-radius:14px;"></div>
+                    <div>
+                        <h3>Eranux</h3>
+                        <p>Online learning system for classroom courses and 1:1 tutoring with instructors.</p>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/trunghau05/ProjectEraNux" target="_blank" rel="noreferrer">GitHub</a>
+                        <a href="https://eranux-demo.example.com" target="_blank" rel="noreferrer">Demo</a>
+                    </div>
+                </div>
+                <div class="project-gallery">
+                    <button class="gallery-nav gallery-prev" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+                    <img src="assets/eranux/img1.png" alt="Eranux screenshot 1">
+                    <img src="assets/eranux/img2.png" alt="Eranux screenshot 2">
+                    <img src="assets/eranux/img3.png" alt="Eranux screenshot 3">
+                    <img src="assets/eranux/img4.png" alt="Eranux screenshot 4">
+                    <button class="gallery-nav gallery-next" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </article>
+        </section>
+
+        <section id="page6" class="page contact-page">
+            <div class="contact-card reveal">
+                <img src="assets/avatar.jpg" alt="Contact avatar" class="avatar small-avatar">
+                <h2>Contact</h2>
+                <p>Let's connect and build something cool together. Have a project, want to collaborate, or just want to say hi? Reach out anytime!</p>
+                <div class="email-row" style="display:flex;justify-content:center;margin-bottom:12px;">
+                    <span class="email-inline"><i class="fa-regular fa-envelope"></i> n.t.hau005@gmail.com</span>
+                </div>
+                <div class="socials">
+                    <a href="https://facebook.com/trunghau05" target="_blank" rel="noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://linkedin.com/in/trunghau05" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="main.js"></script>
+</html>

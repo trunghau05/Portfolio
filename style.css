@@ -585,6 +585,7 @@ h3 {
 .contact-page {
 	display: grid;
 	place-items: center;
+	padding: 64px 0 48px;
 }
 
 .contact-card {

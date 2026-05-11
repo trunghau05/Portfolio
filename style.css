@@ -19,11 +19,7 @@
 	font-size: 1.13em;
 	color: var(--accent);
 }
-/* PonPlan gallery taller for portrait images */
-.project-card:nth-of-type(1) .project-gallery {
-	min-height: 560px;
-	max-width: 400px;
-}
+
 :root {
 	--bg: #050505;
 	--bg-soft: #0f0f0f;

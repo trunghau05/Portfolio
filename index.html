@@ -156,6 +156,19 @@
                         </div>
                     </article>
 
+                        <article class="skill-row" data-tech="Node.js">
+                            <div class="skill-meta">
+                                <img src="https://cdn.simpleicons.org/nodedotjs/339933" alt="Node.js icon">
+                                <div>
+                                    <h3>Node.js</h3>
+                                    <p>Event-driven backend, REST APIs, and real-time services</p>
+                                    <div class="skill-progress" style="--level: 84%;">
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
                     <article class="skill-row" data-tech="Django">
                         <div class="skill-meta">
                             <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/django-logo.png" alt="Django icon">
@@ -188,6 +201,7 @@
                 <article class="tool-card reveal" data-tech="GitHub"><img src="https://cdn.simpleicons.org/github/f5f5f5" alt="GitHub"><h3>GitHub</h3></article>
                 <article class="tool-card reveal" data-tech="Figma"><img src="https://cdn.freelogovectors.net/wp-content/uploads/2021/08/figma-logo.png" alt="Figma"><h3>Figma</h3></article>
                 <article class="tool-card reveal" data-tech="Postman"><img src="https://cdn.simpleicons.org/postman/ff6c37" alt="Postman"><h3>Postman</h3></article>
+                    <article class="tool-card reveal" data-tech="Chart.js"><img src="https://cdn.simpleicons.org/chartdotjs/ff6384" alt="Chart.js"><h3>Chart.js</h3></article>
             </div>
         </section>
 
@@ -200,6 +214,7 @@
                 <article class="db-card reveal" data-tech="MongoDB"><img src="https://cdn.simpleicons.org/mongodb/47a248" alt="MongoDB"><h3>MongoDB</h3></article>
                 <article class="db-card reveal" data-tech="Cloudinary"><img src="https://cdn.simpleicons.org/cloudinary/3448c5" alt="Cloudinary"><h3>Cloudinary</h3></article>
                 <article class="db-card reveal" data-tech="Supabase"><img src="https://cdn.simpleicons.org/supabase/3ecf8e" alt="Supabase"><h3>Supabase</h3></article>
+                <article class="db-card reveal" data-tech="Firebase"><img src="https://vectorseek.com/wp-content/uploads/2025/05/Firebase-icon-Logo-PNG-SVG-Vector.png" alt="Firebase"><h3>Firebase</h3></article>
             </div>
         </section>
 
@@ -207,85 +222,155 @@
             <div class="section-head reveal">
                 <h2>Projects</h2>
             </div>
-
-            <article class="project-card reveal">
-                <div class="project-head">
-                    <div class="project-logo"><img src="assets/ponplan/logo.jpg" alt="PonPlan logo" style="width:100%;height:100%;object-fit:cover;border-radius:14px;"></div>
-                    <div>
-                        <h3>PonPlan</h3>
-                        <p>Expense management app with personal spending tracking and consumption charts.</p>
+            <div class="project-row">
+                <article class="project-card reveal">
+                    <div class="project-head">
+                        <div class="project-logo"><img src="assets/ponplan/logo.jpg" alt="PonPlan logo" style="width:100%;height:100%;object-fit:cover;border-radius:14px;"></div>
+                        <div>
+                            <h3>PonPlan</h3>
+                            <p>Expense management app with personal spending tracking and consumption charts.</p>
+                            <div class="project-detail">
+                                <strong>Project Description & Key Features:</strong>
+                                <ul style="margin-bottom:10px;">
+                                    <li>Web/mobile expense management app using a card-based system.</li>
+                                    <li>Supports balance tracking, expense recording, monthly summaries, and visual dashboard by time/category.</li>
+                                    <li>Enables structured expense classification for better planning.</li>
+                                </ul>
+                                <strong>Responsibilities & Contributions:</strong>
+                                <ul>
+                                    <li>Designed system architecture and core workflows.</li>
+                                    <li>Developed UI with Angular/Ionic and implemented expense/balance logic.</li>
+                                    <li>Built MySQL schema (Django Models) và Django REST APIs cho frontend.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <div class="project-actions-row">
+                                <div class="project-techs">
+                                    <span class="project-tech-btn">Angular</span>
+                                    <span class="project-tech-btn">Ionic</span>
+                                    <span class="project-tech-btn">Django</span>
+                                    <span class="project-tech-btn">MySQL</span>
+                                    <span class="project-tech-btn">Firebase</span>
+                                    <span class="project-tech-btn">Chart.js</span>
+                                </div>
+                                <div class="project-action-buttons">
+                                    <a href="https://github.com/trunghau05/ProjectPonPlan" class="project-action-btn github" target="_blank" rel="noreferrer">
+                                        <i class="fab fa-github"></i> GitHub
+                                    </a>
+                                    <a href="https://ponplan-demo.example.com" class="project-action-btn live" target="_blank" rel="noreferrer">
+                                        <i class="fa fa-arrow-up-right-from-square"></i> Live
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="project-actions">
-                        <a href="https://github.com/trunghau05/ProjectPonPlan" target="_blank" rel="noreferrer">GitHub</a>
-                        <a href="https://ponplan-demo.example.com" target="_blank" rel="noreferrer">Demo</a>
+                </article>
+                <article class="project-card reveal">
+                    <div class="project-head">
+                        <div class="project-logo"><img src="assets/vitdaily/logo.jpg" alt="VitDaily logo" style="width:100%;height:100%;object-fit:cover;border-radius:14px;"></div>
+                        <div>
+                            <h3>VitDaily</h3>
+                            <p>Personal and team workspace task management app.</p>
+                            <div class="project-detail">
+                                <strong>Project Description & Key Features:</strong>
+                                <ul style="margin-bottom:10px;">
+                                    <li>Web app for personal notes, individual tasks, and collaborative team workspaces.</li>
+                                    <li>Uses MySQL for personal data (structured, consistent storage) and MongoDB for team workspaces/tasks (flexible, scalable).</li>
+                                </ul>
+                                <strong>Responsibilities & Contributions:</strong>
+                                <ul>
+                                    <li>Designed system architecture and database strategy based on business needs.</li>
+                                    <li>Developed user-friendly frontend và implemented client-side logic for notes, tasks, and workspaces.</li>
+                                    <li>Designed MySQL schemas with Django Models và structured MongoDB data for team features.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <div class="project-actions-row">
+                                <div class="project-techs">
+                                    <span class="project-tech-btn">Angular</span>
+                                    <span class="project-tech-btn">Django</span>
+                                    <span class="project-tech-btn">MySQL</span>
+                                    <span class="project-tech-btn">MongoDB</span>
+                                    <span class="project-tech-btn">Material UI</span>
+                                </div>
+                                <div class="project-action-buttons">
+                                    <a href="https://github.com/trunghau05/ProjectVitDaily" class="project-action-btn github" target="_blank" rel="noreferrer">
+                                        <i class="fab fa-github"></i> GitHub
+                                    </a>
+                                    <a href="https://vitdaily-demo.example.com" class="project-action-btn live" target="_blank" rel="noreferrer">
+                                        <i class="fa fa-arrow-up-right-from-square"></i> Live
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="project-gallery">
-                    <button class="gallery-nav gallery-prev" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
-                    <img src="assets/ponplan/img1.png" alt="PonPlan screenshot 1">
-                    <img src="assets/ponplan/img2.png" alt="PonPlan screenshot 2">
-                    <img src="assets/ponplan/img3.png" alt="PonPlan screenshot 3">
-                    <img src="assets/ponplan/img4.png" alt="PonPlan screenshot 4">
-                    <button class="gallery-nav gallery-next" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
-                </div>
-            </article>
-
-            <article class="project-card reveal">
-                <div class="project-head">
-                    <div class="project-logo"><img src="assets/vitdaily/logo.jpg" alt="VitDaily logo" style="width:100%;height:100%;object-fit:cover;border-radius:14px;"></div>
-                    <div>
-                        <h3>VitDaily</h3>
-                        <p>Personal and team workspace task management app.</p>
+                </article>
+            </div>
+            <div class="project-row">
+                <article class="project-card reveal">
+                    <div class="project-head">
+                        <div class="project-logo"><img src="assets/eranux/logo.jpg" alt="Eranux logo" style="width:100%;height:100%;object-fit:cover;border-radius:14px;"></div>
+                        <div>
+                            <h3>Eranux</h3>
+                            <p>Online learning system for classroom courses and 1:1 tutoring with instructors.</p>
+                            <div class="project-detail">
+                                <strong>Project Description & Key Features:</strong>
+                                <ul style="margin-bottom:10px;">
+                                    <li>Multi-module web platform for online class management, scheduling, video calls, and real-time collaboration.</li>
+                                    <li>Backend built with Django, using MySQL for structured data (users, classes, schedules) và RESTful APIs for integration.</li>
+                                    <li>Frontend developed in Angular, providing interactive UI for students, teachers, and tutors.</li>
+                                    <li>Includes real-time video call and signaling server (WebRTC), speech-to-text server, and notification system.</li>
+                                </ul>
+                                <strong>Responsibilities & Contributions:</strong>
+                                <ul>
+                                    <li>Designed overall system architecture, integrating Django backend, Angular frontend, and real-time services.</li>
+                                    <li>Developed REST APIs, database schemas, and business logic for class management, scheduling, and user roles.</li>
+                                    <li>Implemented Angular components for video calls, scheduling, and notifications.</li>
+                                    <li>Integrated WebRTC signaling and STT server for live class features and accessibility.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <div class="project-actions-row">
+                                <div class="project-techs">
+                                    <span class="project-tech-btn">Angular</span>
+                                    <span class="project-tech-btn">WebRTC</span>
+                                    <span class="project-tech-btn">Socket.IO</span>
+                                    <span class="project-tech-btn">Django</span>
+                                    <span class="project-tech-btn">Node.js</span>
+                                    <span class="project-tech-btn">MySQL</span>
+                                    <span class="project-tech-btn">Supabase</span>
+                                    <span class="project-tech-btn">Cloudinary</span>
+                                </div>
+                                <div class="project-action-buttons">
+                                    <a href="https://github.com/trunghau05/ProjectEraNux" class="project-action-btn github" target="_blank" rel="noreferrer">
+                                        <i class="fab fa-github"></i> GitHub
+                                    </a>
+                                    <a href="https://eranux-demo.example.com" class="project-action-btn live" target="_blank" rel="noreferrer">
+                                        <i class="fa fa-arrow-up-right-from-square"></i> Live
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="project-actions">
-                        <a href="https://github.com/trunghau05/ProjectVitDaily" target="_blank" rel="noreferrer">GitHub</a>
-                        <a href="https://vitdaily-demo.example.com" target="_blank" rel="noreferrer">Demo</a>
-                    </div>
-                </div>
-                <div class="project-gallery">
-                    <button class="gallery-nav gallery-prev" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
-                    <img src="assets/vitdaily/img1.png" alt="VitDaily screenshot 1">
-                    <img src="assets/vitdaily/img2.png" alt="VitDaily screenshot 2">
-                    <img src="assets/vitdaily/img3.png" alt="VitDaily screenshot 3">
-                    <img src="assets/vitdaily/img4.png" alt="VitDaily screenshot 4">
-                    <button class="gallery-nav gallery-next" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
-                </div>
-            </article>
-
-            <article class="project-card reveal">
-                <div class="project-head">
-                    <div class="project-logo"><img src="assets/eranux/logo.jpg" alt="Eranux logo" style="width:100%;height:100%;object-fit:cover;border-radius:14px;"></div>
-                    <div>
-                        <h3>Eranux</h3>
-                        <p>Online learning system for classroom courses and 1:1 tutoring with instructors.</p>
-                    </div>
-                    <div class="project-actions">
-                        <a href="https://github.com/trunghau05/ProjectEraNux" target="_blank" rel="noreferrer">GitHub</a>
-                        <a href="https://eranux-demo.example.com" target="_blank" rel="noreferrer">Demo</a>
-                    </div>
-                </div>
-                <div class="project-gallery">
-                    <button class="gallery-nav gallery-prev" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
-                    <img src="assets/eranux/img1.png" alt="Eranux screenshot 1">
-                    <img src="assets/eranux/img2.png" alt="Eranux screenshot 2">
-                    <img src="assets/eranux/img3.png" alt="Eranux screenshot 3">
-                    <img src="assets/eranux/img4.png" alt="Eranux screenshot 4">
-                    <button class="gallery-nav gallery-next" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
-                </div>
-            </article>
+                </article>
+            </div>
         </section>
 
         <section id="page6" class="page contact-page">
             <div class="contact-card reveal">
                 <img src="assets/avatar.jpg" alt="Contact avatar" class="avatar small-avatar">
-                <h2>Contact</h2>
+                <h2>Contact Me</h2>
                 <p>Let's connect and build something cool together. Have a project, want to collaborate, or just want to say hi? Reach out anytime!</p>
                 <div class="email-row" style="display:flex;justify-content:center;margin-bottom:12px;">
                     <span class="email-inline"><i class="fa-regular fa-envelope"></i> n.t.hau005@gmail.com</span>
                 </div>
-                <div class="socials">
+                <div class="socials" style="margin-top: 20px;">
                     <a href="https://facebook.com/trunghau05" target="_blank" rel="noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="https://linkedin.com/in/trunghau05" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/trunghau05" target="_blank" rel="noreferrer" aria-label="GitHub" class="contact-github-btn"><i class="fab fa-github"></i></a>
                 </div>
             </div>
         </section>

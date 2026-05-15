@@ -172,6 +172,31 @@ gsap.utils.toArray(".project-gallery").forEach((gallery) => {
 	}
 });
 
+// Project card click: expand/collapse card to show/hide detail (no popup)
+function isMobileDevice() {
+    return window.innerWidth <= 768 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
+document.querySelectorAll('.project-card').forEach(card => {
+	if (isMobileDevice()) {
+		// Trên mobile: không cho click vào project-card
+		card.style.pointerEvents = 'none';
+	} else {
+		// Hover: show detail (CSS handles this)
+		// Click: toggle expanded
+		card.addEventListener('click', function (e) {
+			// Prevent nested links from triggering expand
+			if (e.target.tagName === 'A') return;
+			const expanded = card.classList.contains('expanded');
+			document.querySelectorAll('.project-card.expanded').forEach(c => c.classList.remove('expanded'));
+			if (!expanded) {
+				card.classList.add('expanded');
+				setTimeout(() => card.scrollIntoView({behavior:'smooth',block:'center'}), 180);
+			}
+		});
+	}
+});
+
 // Mobile hamburger menu toggle.
 const menuToggle = document.querySelector(".menu-toggle");
 const topbarNav = document.querySelector(".topbar-nav");

@@ -1,3 +1,59 @@
+/* Project actions row: techs + buttons */
+.project-actions-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	width: 100%;
+}
+.project-action-buttons {
+	display: none;
+	gap: 8px;
+	margin-left: auto;
+}
+.project-card.expanded .project-action-buttons {
+	display: flex;
+}
+.project-action-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	background: rgba(93,242,255,0.08);
+	color: var(--accent);
+	border: 1px solid var(--accent);
+	border-radius: 999px;
+	padding: 5px 14px;
+	font-size: 0.95rem;
+	font-weight: 600;
+	text-decoration: none;
+	transition: background 0.2s, border 0.2s;
+    white-space: nowrap;
+}
+.project-action-btn i {
+	font-size: 1.08em;
+}
+/* Project tech buttons */
+.project-techs {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin-top: 10px;
+}
+.project-tech-btn {
+	display: inline-block;
+	background: rgba(93,242,255,0.08);
+	color: inherit;
+	border: none;
+	border-radius: 999px;
+	padding: 3px 10px;
+	font-size: 0.9rem;
+	font-weight: 600;
+	cursor: default;
+	user-select: text;
+	transition: none;
+    white-space: nowrap;
+}
+
 /* Email inline style for contact */
 .email-inline {
 	display: inline-flex;
@@ -44,6 +100,38 @@ html {
 body {
 	background: var(--bg);
 	color: var(--text);
+.project-row {
+    display: block;
+}
+.project-card {
+	background: rgba(20, 20, 20, 0.32);
+	backdrop-filter: blur(12px) saturate(1.5);
+	-webkit-backdrop-filter: blur(12px) saturate(1.5);
+	border: 1px solid rgba(255, 255, 255, 0.13);
+	box-shadow: 0 18px 42px rgba(0, 0, 0, 0.35);
+	border-radius: 20px;
+	padding: 18px;
+	margin: 0 auto 32px;
+	max-width: 900px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 18px;
+	align-items: stretch;
+	transition: box-shadow 0.2s, border-color 0.2s, background 0.2s;
+	cursor: pointer;
+}
+.project-card.expanded {
+	background: rgba(20, 20, 30, 0.92);
+	z-index: 10;
+	box-shadow: 0 24px 64px 0 rgba(93,242,255,0.18), 0 2px 8px rgba(0,0,0,0.18);
+	max-width: 900px;
+}
+.project-card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 18px 52px rgba(93,242,255,0.10), 0 2px 8px rgba(0,0,0,0.18);
+    background: rgba(20, 20, 30, 0.45);
+}
 	font-family: "Space Grotesk", sans-serif;
 	line-height: 1.5;
 	overflow-x: hidden;
@@ -427,6 +515,43 @@ h3 {
 	align-items: stretch;
 }
 
+.project-card .project-detail {
+	display: none;
+	opacity: 0;
+	max-height: 0;
+	margin-top: 0;
+	font-size: 1.13rem;
+	color: var(--text);
+	transition: opacity 0.25s, max-height 0.25s, margin-top 0.25s;
+}
+.project-card.expanded .project-detail {
+	display: block;
+	opacity: 1;
+	max-height: 500px;
+	margin-top: 18px;
+	animation: expandDetail 0.32s cubic-bezier(0.4,0,0.2,1);
+}
+@keyframes expandDetail {
+	from {
+		opacity: 0;
+		max-height: 0;
+		margin-top: 0;
+		transform: scaleY(0.96);
+	}
+	to {
+		opacity: 1;
+		max-height: 500px;
+		margin-top: 18px;
+		transform: scaleY(1);
+	}
+}
+.project-card.expanded {
+	background: rgba(20, 20, 30, 0.92);
+	z-index: 10;
+	box-shadow: 0 24px 64px 0 rgba(93,242,255,0.18), 0 2px 8px rgba(0,0,0,0.18);
+	/* Không thay đổi max-width hay width khi expanded */
+}
+
 .project-head {
 	display: grid;
 	grid-template-columns: auto 1fr;
@@ -712,6 +837,11 @@ h3 {
 		padding: 10px 16px;
 		box-sizing: border-box;
 		z-index: 20;
+		pointer-events: none; /* Ngăn chặn che phủ toàn bộ nửa trên */
+	}
+
+	.topbar > * {
+		pointer-events: auto; /* Các thành phần con vẫn nhận sự kiện */
 	}
 
 	.topbar::before {

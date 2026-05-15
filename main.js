@@ -8,7 +8,7 @@ introTl
 	.from(".eyebrow", { y: 16, opacity: 0, duration: 0.45 }, "-=0.25")
 	.from("h1", { y: 28, opacity: 0, duration: 0.55 }, "-=0.2")
 	.from(".summary", { y: 18, opacity: 0, duration: 0.45 }, "-=0.15")
-	.from(".cta", { scale: 0.92, opacity: 0, duration: 0.4 }, "-=0.2");
+	.from([".cta", "#cv-btn"], { scale: 0.92, opacity: 0, duration: 0.4, stagger: 0.07 }, "-=0.2");
 
 // Reveal sections and cards on scroll.
 gsap.utils.toArray(".reveal").forEach((element, i) => {
@@ -248,3 +248,15 @@ function updateActiveLink() {
 
 window.addEventListener("scroll", updateActiveLink);
 updateActiveLink();
+
+// Open CV in Google Docs when clicking 'My CV' button
+document.addEventListener('DOMContentLoaded', function() {
+	const cvBtn = document.getElementById('cv-btn');
+	if (cvBtn) {
+		cvBtn.addEventListener('click', function(e) {
+			e.preventDefault();
+			const cvUrl = window.location.origin + '/assets/cv.pdf';
+			window.open(cvUrl, '_blank');
+		});
+	}
+});

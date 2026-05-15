@@ -1,3 +1,15 @@
+/* Outline button style for My CV */
+.cta.cta-outline {
+	background: transparent !important;
+	color: var(--primary, #00b894);
+	border: 2px solid var(--primary, #00b894);
+	box-shadow: none;
+	transition: background 0.2s, color 0.2s;
+}
+.cta.cta-outline:hover, .cta.cta-outline:focus {
+	background: var(--primary, #00b894);
+	color: #fff;
+}
 /* Project actions row: techs + buttons */
 .project-actions-row {
 	display: flex;
@@ -27,8 +39,25 @@
 	font-weight: 600;
 	text-decoration: none;
 	transition: background 0.2s, border 0.2s;
-    white-space: nowrap;
+	white-space: nowrap;
+	cursor: pointer;
 }
+
+#cv-btn {
+	border: 1.5px solid var(--accent, #00b894);
+	color: var(--accent, #00b894);
+	background: rgba(93,242,255,0.08);
+	border-radius: 999px;
+	font-weight: 600;
+	font-size: 0.97rem;
+	padding: 6px 18px;
+	transition: background 0.18s, border 0.18s, color 0.18s;
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+}
+
+
 .project-action-btn i {
 	font-size: 1.08em;
 }

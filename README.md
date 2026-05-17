@@ -6,7 +6,7 @@ Page 2(có hình ảnh minh họa của công nghệ được sử dụng):
 Page 3(có hình ảnh minh họa của tool được sử dụng):
 - Tool: material, notion, fork, git, github, figma, postman
 Page 4: 
-- Storage & Database: MySQL, MongoDB, Cloudinary, Supabase
+- Storage & Database: PostgreSQL, MongoDB, Cloudinary, Supabase
 Page 5(có logo và tên dự án, có phần mô tả ngắn, link github, 4 hình ảnh cho mỗi dự án):
 - Project: PonPlan, VitDaily, Eranux
 Page 6:
